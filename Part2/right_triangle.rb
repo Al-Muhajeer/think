@@ -11,7 +11,7 @@ if a == b && b == c
 	puts "Треугольник равнобедренный и равносторонний, но не прямоугольный"
 else
 	if a > b && a > c
-		hypotenuse = a
+    hypotenuse = a
     first = b
     second = c
   elsif b > a && b > c
