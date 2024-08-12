@@ -1,12 +1,7 @@
-vowels = {
-  "a" => 1,
-  "e" => 2,
-  "i" => 3,
-  "o" => 4,
-  "u" => 5,
-  "y" => 6
-}
-
-vowels.each do |vowel, number|
-  puts "#{vowel} - #{number}."
+vowels = {}
+vowels_letter = %w(a e o u i y)
+('a'..'z').each.with_index(1) do |letter, x|
+  vowels[letter] = x if vowels_letter.include?(letter)
 end
+
+puts "#{vowels} - #{x}"

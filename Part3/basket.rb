@@ -12,15 +12,15 @@ loop do
   print "Количество товара: "
   quantity = gets.to_f
   basket[name] = { price: price, quantity: quantity }
+end
 
 sum = 0
 total = 0
 
 basket.each do |product, value|
   sum = value[:price] * value[:quantity]
-  puts "Продукт #{name}, цена: #{value[:price]}, количество #{value[:quantity]}, сумма: #{sum}"
+  puts "Продукт #{product}, цена: #{value[:price]}, количество #{value[:quantity]}, сумма: #{sum}"
   total += sum
-end
 
 puts "Общая сумма: #{total}"
 end
